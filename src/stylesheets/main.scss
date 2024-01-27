@@ -1,1 +1,269 @@
 // Your styles go here
+
+/* Overall Styling */
+html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit;
+}
+
+/* Header & Footer */
+.header,
+.footer {
+    background-color: #6A1314;
+    height: 35px;
+}
+
+/* Dashed Lines */
+.dashedLines {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0px;
+}
+
+.line1, 
+.line2, 
+.line3,
+.line4,
+.line5 {
+    background-color: #F3EBDF;
+    height: 15px;
+}
+
+.line2,.line4 {
+    margin: 8px 0px;
+}
+
+/* Main Content */
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+}
+
+/* Main Content - Big Box */
+.mainContent .bigBox {
+    background-color: #6A1314;
+    height: 220px;
+}
+
+/* Main Content - Aside */
+.mainContent .aside {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+/* Main Content - Aside - Lines */
+.multipleLines {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-right: 8px;
+}
+
+/* Main Content - Aside - Lines - First Row */
+.firstLineRow {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+
+/* Main Content - Aside - Lines - Second Row */
+.secondLineRow {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.multiLine1,
+.multiLine2,
+.multiLine3,
+.multiLine4 {
+    width: 100%;
+    height: 50px;
+    background-color: #F3EBDF;
+}
+
+.multiLine1,
+.multiLine3 {
+    margin-bottom: 4px;
+}
+
+.multiLine2,
+.multiLine4 {
+    margin-top: 4px; 
+}
+
+/* Main Content - Aside - Little Box */
+.littleBox {
+    background-color: #6A1314;
+    width: 45%;
+}
+
+/* On Tablets */
+@media all and (min-width: 500px) {
+    /* Header & Footer */
+    .header,
+    .footer {
+        height: 70px;
+    }
+
+    /* Dashed Lines */
+    .dashedLines {
+        display: flex;
+        flex-direction: row;
+        padding: 11px 0px;
+        width: 100%;
+    }
+
+    .line1, 
+    .line2, 
+    .line3,
+    .line4,
+    .line5 {
+        width: 20%;
+        height: 35px;
+    }
+
+    .line2,.line4 {
+        margin: 0px 8px;
+    }
+
+    /* Main Content - Big Box */
+    .mainContent .bigBox {
+        height: 400px;
+    }
+
+    /* Main Content - Aside - Lines - First Row */
+    .firstLineRow {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5.5px;
+    }
+
+    /* Main Content - Aside - Lines - Second Row */
+    .secondLineRow {
+        margin-top: 5.5px;
+        display: row;
+        flex-direction: row;
+    }
+
+    .multiLine1,
+    .multiLine3 {
+        margin: 0px 5.5px 0px 0px;
+    }
+
+    .multiLine2,
+    .multiLine4 {
+        margin: 0px 0px 0px 5.5px;
+    }
+}
+
+/* On Desktops */
+@media all and (min-width: 800px) {
+    /* Header & Footer */
+    .header,
+    .footer {
+        height: 70px;
+    }
+
+    /* Dashed Lines */
+    .dashedLines {
+        display: flex;
+        flex-direction: row;
+        padding: 15px 0px;
+        width: 100%;
+    }
+
+    .line1, 
+    .line2, 
+    .line3,
+    .line4,
+    .line5 {
+        width: 20%;
+        height: 40px;
+    }
+
+    .line2,.line4 {
+        margin: 0px 40px;
+    }
+
+    /* Main Content */
+    .mainContent {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+
+    /* Main Content - Big Box */
+    .mainContent .bigBox {
+        width: 55%;
+        height: 440px;
+    }
+
+    /* Main Content - Aside */
+    .mainContent .aside {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0px;
+        margin-left: 15px;
+        width: 45%;
+    }
+
+    /* Main Content - Aside - Lines */
+    .multipleLines {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    /* Main Content - Aside - Lines - First Row */
+    .firstLineRow {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+
+    /* Main Content - Aside - Lines - Second Row */
+    .secondLineRow {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .multiLine1,
+    .multiLine2,
+    .multiLine3,
+    .multiLine4 {
+        height: 80px;
+    }
+
+    .multiLine1,
+    .multiLine3 {
+        margin: 0px 13px 0px 0px;
+    }
+
+    .multiLine2,
+    .multiLine4 {
+        margin: 0px 0px 0px 13px;
+    }
+
+    /* Main Content - Aside - Little Box */
+    .littleBox {
+        height:100%;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
